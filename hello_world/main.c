@@ -1,6 +1,5 @@
-echo '#include <stdio.h>
-
+#include <stdio.h>
 
 int main(void) {
-    return (0);
-}' > main.c
+	return (0);
+}
