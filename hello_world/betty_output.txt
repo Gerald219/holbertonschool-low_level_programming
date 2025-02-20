@@ -1,0 +1,5 @@
+
+========== 6-size.c ==========
+6-size.c:8: ERROR: trailing whitespace
+total: 1 errors, 0 warnings, 19 lines checked
+main
