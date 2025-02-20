@@ -3,9 +3,9 @@
 
 /**
  * main - entry point
- * Description: printing various types
+ * Description: prints various types
+ * using the 'printf' function 
  *  
- *
  * Return: Always 0 (Success)
  */
 int main(void)
