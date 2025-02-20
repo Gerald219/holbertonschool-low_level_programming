@@ -7,7 +7,8 @@
  *
  * Return: Always 0 (Success)
  */
-main int(void)
+int main(void)
 {
-	printf "${with proper grammar, butthe outcome is a piece of art,}\n";
+	printf("with proper grammar, butthe outcome is a piece of art,\n);
 		return (0);
+}
