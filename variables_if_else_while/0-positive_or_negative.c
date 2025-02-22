@@ -2,6 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 
+/**
+ * main - Generates a random number
+ *
+ * Description: Asigns a randome number to variabe n, also prints if
+ *  the value is negative positive or zero.
+ *
+ *  Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
