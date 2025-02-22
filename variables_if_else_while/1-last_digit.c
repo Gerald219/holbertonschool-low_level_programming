@@ -4,10 +4,10 @@
 
 /**
  * main - asigns a random number, identifies the last digit and verifies the
- * clasification. 
+ * clasification.
  *
- * Description: This program displays the last digit of n, then verifies if this 
- * digit is greater than 5, 0 , less than 6 and not 0.
+ * Description: This program displays the last digit of n, then verifies if
+ * this digit is greater than 5, 0 , less than 6 and not 0.
  *
  * Return: Always 0 (Success)
  */
