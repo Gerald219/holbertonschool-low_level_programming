@@ -5,7 +5,8 @@
  *
  * Description: Uses a loop to print 'a' to 'z' using _putchar.
  * then after adds a new line to format correctly.
- */
+ *
+ * Return: Always 0 (Success)
 void print_alphabet(void)
 {
 	char letter;
