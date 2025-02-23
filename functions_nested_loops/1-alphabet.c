@@ -6,8 +6,6 @@
  * Description: Function uses a loop through the lowercase letters
  * from 'a' to 'z' and prints them using _putchar.
  * It then prints a newline for proper formatting.
- *
- * Return: Always 0 (Success)
  */
 void print_alphabet(void)
 {
