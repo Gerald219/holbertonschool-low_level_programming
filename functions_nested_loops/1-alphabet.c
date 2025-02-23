@@ -3,8 +3,9 @@
 /**
  * print_Alphabet - Prints the alphabet in lowercase, followed by a new line.
  *
- * Description: Uses a loop to print 'a' to 'z' using _putchar.
- * then after adds a new line to format correctly.
+ * Description: Function uses a loop through the lowercase letters
+ * from 'a' to 'z' and prints them using _putchar.
+ * It then prints a newline for proper formatting.
  *
  * Return: Always 0 (Success)
  */
