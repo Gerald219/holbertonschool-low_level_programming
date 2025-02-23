@@ -14,9 +14,9 @@ int main(void)
 	int i;
 
 	for (i = 0; text[i] != '\0'; i++)
-		putchar(text[i]);
+		_putchar(text[i]);
 
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
