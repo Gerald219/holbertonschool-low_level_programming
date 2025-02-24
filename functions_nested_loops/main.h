@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void jack_bauer(void);
+void times_table(void);
 int _putchar(char c);
 
 
