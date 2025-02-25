@@ -5,8 +5,6 @@
  *
  * Description: It is the implementation.Uses a loop to
  * print numbers 0-9, except 2 and 4.
- *
- * Return: 
  */
 void print_most_numbers(void)
 {
