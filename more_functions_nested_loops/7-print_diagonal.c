@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_diagonal - Draws a diagonal line on terminal.
- * @n- amount of times for the character '\' should be printed.
+ * print_diagonal - Draws a diagonal line using '\' in the terminal.
+ * @n: Number of times '\' is printed, with increasing spaces before each.
  *
  * Description: Prints a diagonal pattern using '\' and spaces.
- * If n is 0 or less, it prints only a newline.
+ * If 'n' is 0 or less, it prints only a newline.
  *
  * Return: nothing (void).
  */
