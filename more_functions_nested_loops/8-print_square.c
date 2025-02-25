@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * print_square - prints a square using '#' characters.
- * @size: The size of the square (both width and height).
+ * print_square - Prints a square using '#' characters.
+ * @size: The size of the square.
  *
- * Description: Prints a square of a 'size x size' using '#' characters.
- * if 'size' is 0 or less, prints only a newline.
+ * Return: Nothing.
  */
 void print_square(int size)
 {
@@ -13,16 +12,13 @@ void print_square(int size)
 
 	if (size > 0)
 	{
-		for (i = 0; i < size; j++)
+		for (i = 0; i < size; i++)
 		{
 			for (j = 0; j < size; j++)
 				_putchar('#');
-
 			_putchar('\n');
 		}
 	}
 	else
-	{
 		_putchar('\n');
-	}
 }
