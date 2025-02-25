@@ -3,9 +3,9 @@
 /**
  * print_numbers - prints numbers from 0 - 9, followed by a new line.
  *
- * Description:
+ * Description: uses a loop to print digits 0 - 9.
  *
- * Return: 
+ * Return: nothing (void function).
  */
 void print_numbers(void)
 {
