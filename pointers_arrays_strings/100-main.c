@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
- * main - Test_atoi function
+/**
+ * main - Tests the _atoi function
  *
- * Return: Always 0. 
+ * Description: Calls _atoi with different strings and prints results.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -22,9 +23,11 @@ int main(void)
 	printf("%d\n", nb);
 	nb = _atoi("Suite 402");
 	printf("%d\n", nb);
-	nb = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA");
+	nb = _atoi("         +      +    -    -98 Battery Street;\n"
+		"\tSan Francisco, CA 94111 - USA");
 	printf("%d\n", nb);
 	nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
 	printf("%d\n", nb);
+
 	return (0);
 }
