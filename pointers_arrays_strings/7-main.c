@@ -1,15 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - tests the puts_half function
+ * main - check the code for encoding a string into 1337.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char *str = "0123456789";
+	char s[] = "Expected the best. Prepare for the worst. "
+		"Capitalize on what comes.\n";
+	char *p;
 
-	puts_half(str);
-
+	p = leet(s);
+	printf("%s", p);
+	printf("%s", s);
 	return (0);
 }
