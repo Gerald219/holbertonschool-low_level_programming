@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void reverse_array(int *a, int n);
+char *_memset(char *s, char b, unsigned int n);
 
 #endif /* MAIN_H */

@@ -1,24 +1,42 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
- * main - Runs the _strcat function to test it
+ * simple_print_buffer - Prints buffer to hexadecimal format.
+ * @buffer: Address of memory to print.
+ * @size: Size of memory to print.
+ */
+void simple_print_buffer(char *buffer, unsigned int size)
+{
+	unsigned int i;
+
+	for (i = 0; i < size; i++)
+	{
+		if (i % 10)
+			printf(" ");
+		if (!(i % 10) && i)
+			printf("\n");
+		printf("0x%02x", buffer[1]);
+				}
+				printf("\n");
+				}
+/**
+ * main - Tests the _memset function.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char s1[98] = "Hello ";
-	char s2[] = "World!\n";
-	char *ptr;
+char buffer[98] = {0x00};
 
-	printf("%s\n", s1);
-	printf("%s", s2);
+printf("Before memset:\n");
+simple_print_buffer(buffer, 98);
 
-	ptr = _strcat(s1, s2);
-	printf("%s", s1);
-	printf("%s", s2);
-	printf("%s", ptr);
+_memset(buffer, 0x01, 95);
 
-	return (0);
+printf("After memset:\n");
+simple_print_buffer(buffer, 98);
+
+return (0);
 }
