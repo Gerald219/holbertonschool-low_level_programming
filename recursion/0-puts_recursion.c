@@ -2,17 +2,17 @@
 
 /**
  * _puts_recursion - Prints a string using recursion, followed by new line.
- * @str: The string to print
+ * @s: The string to print
  *
  * Return: nothing(void)
  */
-void _puts_recursion(char *str)
+void _puts_recursion(char *s)
 {
-	if (*str == '\0')
+	if (*s == '\0')
 	{
 		_putchar('\0');
 		return;
 	}
-	_putchar(*str);
-	_puts_recursion(str + 1);
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
