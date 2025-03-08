@@ -9,8 +9,11 @@
  */
 int find_sqrt(int n, int guess)
 {
-	if (guess * guess > n) return (-1);
-	if (guess * guess == n) return (guess);
+	if (guess * guess > n)
+		return (-1);
+	if (guess * guess == n)
+		return (guess);
+
 	return (find_sqrt(n, guess + 1));
 }
 /**
