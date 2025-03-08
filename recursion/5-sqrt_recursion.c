@@ -13,7 +13,6 @@ int find_sqrt(int n, int guess)
 	if (guess * guess == n) return (guess);
 	return (find_sqrt(n, guess + 1));
 }
-
 /**
  * _sqrt_recursion - Return the natural square root of a number.
  * @n: The number to find the square rot of.
