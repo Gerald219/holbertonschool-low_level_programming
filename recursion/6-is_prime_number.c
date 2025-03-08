@@ -24,6 +24,7 @@ int check_prime(int n, int div)
  *
  * Return: 1 if prime, 0 otherwise.
  */
+
 int is_prime_number (int n)
 {
 	if (n <= 1)
