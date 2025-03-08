@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _sqrt_recursion(int n);
-int find_sqrt(int n, int guess);
+int is_prime_number(int n);
+int check_prime(int n, int div);
 
 #endif /* MAIN_h */
