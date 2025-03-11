@@ -3,7 +3,7 @@
 /**
  * main - Prints the program's name.
  * @argc: Argument count (not used).
- * @arvg: Argument vector (array of command-line arguments).
+ * @argv: Argument vector (array of command-line arguments).
  *
  * Return: Always 0.
  */
