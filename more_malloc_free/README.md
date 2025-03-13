@@ -1,0 +1,1 @@
+Exit(3) stops a program wihtout saving it. Calloc() gives you new memory space and cleans it. Malloc() gives you memory but does not clean it. Realloc() changes the size of the memory you have. Exit(3) stops the program cold turkey. All of the functions work together to manage memory.
