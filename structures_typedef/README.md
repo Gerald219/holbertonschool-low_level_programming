@@ -1,0 +1,1 @@
+A struct contains various variables int, char[] in one place. Each variable has it's own set of the fields you define. So, it organizes information. Now, typedef gives an alias to a type, a new name. It can turn something complex into something short and cleaner.
