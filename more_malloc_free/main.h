@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int *array_range(int min, int max);
+void *malloc_check(unsigned int b);
 
 #endif /* MAIN_H */
