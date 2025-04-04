@@ -16,7 +16,7 @@ int main(void)
 	printf("%s\n", concat);
 	free(concat);
 
-	concat = string_noncat("", "Hello", 12);
+	concat = string_nconcat("", "Hello", 12);
 	printf("%s\n", concat);
 	free(concat);
 
