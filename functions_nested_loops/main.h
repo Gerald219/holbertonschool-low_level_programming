@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-void print_to_98(int n);
+void jack_bauer(void);
+int _putchar(char c);
 
 #endif /* MAIN_H */
