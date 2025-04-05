@@ -5,7 +5,13 @@
 #include <stdio.h>
 
 /**
- * struct list_s - info about one item in the list
+ * struct list_s - singly linked list
+ * @str: a malloc string, can represent (NULL)
+ * @len: the length of the string
+ * @next: pointer to the next node in the list, or NULL if gone
+ * struct list_s: info about one item in the list
+ *
+ * Description: node structure for a singly linked list
  */
 
 typedef struct list_s
