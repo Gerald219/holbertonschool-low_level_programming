@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	result = operation(num1, num2)
+	result = operation(num1, num2);
 		printf("%d\n", result);
 	return (0);
 }
