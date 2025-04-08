@@ -1,0 +1,1 @@
+This project teaches how linked lists work — like a chain of boxes, where each box holds some info and a link to the next one. It’s way more flexible than arrays because you can easily add or remove boxes without messing up the whole thing up.
