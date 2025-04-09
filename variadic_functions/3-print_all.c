@@ -10,14 +10,14 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list args;
 	int i = 0;
-	char *str; 
-	char *sep = "";
+	char *str;
+	va_list args;
+	char *sep = " ";
 
 	va_start(args, format);
 
-	while(format && format[i])
+	while (format && format[i])
 	{
 		if (format[i] == 'c')
 		{
@@ -34,8 +34,8 @@ void print_all(const char * const format, ...)
 		else if (format[i] == 's')
 		{
 			str = va_arg(args, char *);
-			if (str == NULL)
-				str = "(nil)";
+			if (!str)
+				str = "(nil";
 			printf("%s%s", sep, str);
 		}
 		else
@@ -43,7 +43,6 @@ void print_all(const char * const format, ...)
 			i++;
 			continue;
 		}
-
 		sep = ", ";
 		i++;
 	}
