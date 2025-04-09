@@ -4,12 +4,14 @@
 #include <stdarg.h>
 
 /**
- * print_strings - prints strings separated by a separator
- * @separator: string to print between each string
- * @n: number of strings passed to the function
+ * File: variadic_functions.h
+ * Desc: header with function prototypes for variadic functions.
  *
  */
 
+int sum_them_all(const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
+void print_all(const char * const format, ...);
 
 #endif
