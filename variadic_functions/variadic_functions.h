@@ -4,15 +4,12 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - returns the sum of a variable number of intergers
- * @n: number of arguments
+ * print_strings - prints strings separated by a separator
+ * @separator: string to print between each string
+ * @n: number of strings passed to the function
  *
- * Return: sum of the intergers
  */
 
-int sum_them_all(const unsigned int n, ...);
-void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
-void print_all(const char * const format, ...);
 
 #endif
