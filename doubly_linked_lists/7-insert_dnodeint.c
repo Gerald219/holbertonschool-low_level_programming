@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * insert_dnodeint_at_index - puts a new numbers into the list at a spesific spot
+ * insert_dnodeint_at_index - adds new numbers into the list at a spesific spot
  * @h: address of the firs node in the list
  * @idx: the spot(index) where the number should be placed
  * @n: the number to be inserted
