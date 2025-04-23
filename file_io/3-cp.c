@@ -5,10 +5,10 @@
 #define BUF_SIZE 1024
 
 /**
- * main - Copies the content of a file to another file
- * @ac: Argument count
- * @av: Argument vector
- * Return: 0 on success, exits with error code on failure
+ * main - copies content of one file to another
+ * @ac: number of arguments
+ * @av: array of arguments
+ * Return: 0 on success
  */
 int main(int ac, char **av)
 {
@@ -17,7 +17,7 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n97\n");
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
