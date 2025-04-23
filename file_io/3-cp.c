@@ -5,11 +5,10 @@
 #define BUF_SIZE 1024
 
 /**
- * main - copies content of one file to another
- * @ac: number of arguments
- * @av: array of argument strings
- *
- * Return: 0 on success, or exits with error code
+ * main - Copies the content of a file to another file
+ * @ac: Argument count
+ * @av: Argument vector
+ * Return: 0 on success, exits with error code on failure
  */
 int main(int ac, char **av)
 {
@@ -18,21 +17,21 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
+		dprintf(2, "Usage: cp file_from file_to\n97\n");
 		exit(97);
 	}
 
 	from_fd = open(av[1], O_RDONLY);
 	if (from_fd < 0)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", av[1]);
+		dprintf(2, "Error: Can't read from file %s\n98\n", av[1]);
 		exit(98);
 	}
 
 	to_fd = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (to_fd < 0)
 	{
-		dprintf(2, "Error: Can't write to %s\n", av[2]);
+		dprintf(2, "Error: Can't write to %s\n99\n", av[2]);
 		close(from_fd);
 		exit(99);
 	}
@@ -42,7 +41,7 @@ int main(int ac, char **av)
 		written = write(to_fd, buffer, read_bytes);
 		if (written != read_bytes)
 		{
-			dprintf(2, "Error: Can't write to %s\n", av[2]);
+			dprintf(2, "Error: Can't write to %s\n99\n", av[2]);
 			close(from_fd);
 			close(to_fd);
 			exit(99);
@@ -51,7 +50,7 @@ int main(int ac, char **av)
 
 	if (read_bytes < 0)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", av[1]);
+		dprintf(2, "Error: Can't read from file %s\n98\n", av[1]);
 		close(from_fd);
 		close(to_fd);
 		exit(98);
@@ -59,13 +58,13 @@ int main(int ac, char **av)
 
 	if (close(from_fd) < 0)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", from_fd);
+		dprintf(2, "Error: Can't close fd %d\n100\n", from_fd);
 		exit(100);
 	}
 
 	if (close(to_fd) < 0)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", to_fd);
+		dprintf(2, "Error: Can't close fd %d\n100\n", to_fd);
 		exit(100);
 	}
 
