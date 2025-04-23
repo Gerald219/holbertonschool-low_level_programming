@@ -6,14 +6,15 @@
 
 /**
  * main - copies content of one file to another
- * @ac: argument count
- * @av: argument values
- * Return: 0 on success
+ * @ac: number of arguments
+ * @av: array of argument strings
+ *
+ * Return: 0 on success, or exits with error code
  */
 int main(int ac, char **av)
 {
 	int from_fd, to_fd, read_bytes, written;
-	char buf[BUF_SIZE];
+	char buffer[BUF_SIZE];
 
 	if (ac != 3)
 	{
@@ -36,9 +37,9 @@ int main(int ac, char **av)
 		exit(99);
 	}
 
-	while ((read_bytes = read(from_fd, buf, BUF_SIZE)) > 0)
+	while ((read_bytes = read(from_fd, buffer, BUF_SIZE)) > 0)
 	{
-		written = write(to_fd, buf, read_bytes);
+		written = write(to_fd, buffer, read_bytes);
 		if (written != read_bytes)
 		{
 			dprintf(2, "Error: Can't write to %s\n", av[2]);
