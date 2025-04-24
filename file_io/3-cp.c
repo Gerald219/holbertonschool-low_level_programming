@@ -5,10 +5,10 @@
 #define BUF_SIZE 1024
 
 /**
- * main - Copies content from one file to another
- * @ac: argument count
- * @av: argument vector
- * Return: 0 on success, exits with error code if failure
+ * main - Copies the content of a file to another file.
+ * @ac: Argument count
+ * @av: Argument vector
+ * Return: 0 on success, exits with codes on error
  */
 int main(int ac, char **av)
 {
