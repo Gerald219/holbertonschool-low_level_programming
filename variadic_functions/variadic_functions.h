@@ -4,10 +4,15 @@
 #include <stdarg.h>
 
 /**
- * File: variadic_functions.h
- * Desc: header with function prototypes for variadic functions.
- *
+ * struct fmt - struct for format specifiers
+ * @symbol: character for the type e.g. 'c', 'i', 'f', 's'
+ * @f: function pointer to handle the format
  */
+
+typedef struct fmt {
+    char symbol;
+    void (*f)(va_list);
+} fmt_t;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
